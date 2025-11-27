@@ -1,5 +1,3 @@
-'use client';
-
 export default function AlphaSignup() {
     return (
         <section className="py-24 bg-sky-400 relative overflow-hidden" id="signup">
