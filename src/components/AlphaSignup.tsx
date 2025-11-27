@@ -22,10 +22,14 @@ export default function AlphaSignup() {
                         name="alpha-signup"
                         method="POST"
                         data-netlify="true"
+                        data-netlify-honeypot="bot-field"
                         action="/thank-you"
                         className="flex flex-col md:flex-row gap-4 max-w-lg mx-auto"
                     >
                         <input type="hidden" name="form-name" value="alpha-signup" />
+                        <p className="hidden">
+                            <label>Don't fill this out: <input name="bot-field" /></label>
+                        </p>
 
                         <input
                             type="email"
